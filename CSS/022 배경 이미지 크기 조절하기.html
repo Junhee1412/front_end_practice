@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>배경 이미지 크기 조절하기</title>
+    <style>
+        #a{
+            width:500px;height:300px;
+            border:2px solid red;
+            background:url(images/station.jpg) no-repeat;
+            background-size:cover;
+            /*background-size는 background를 먼저 쓰고 나서 써야 먹힘*/
+            /*cover는 사이즈가 긴 쪽에 맞춰짐(이미지가 짤림)*/
+            /*contain은 사이즈가 짧은 곳에 맞춰짐(이미지는 안짤리지만 
+            배경과 이미지 크기가 다르면 남을 수 있음.)*/
+        }
+        #b{
+            width:300px;height:500px;
+            border:2px solid green;
+            background:url(images/station.jpg) no-repeat;
+            background-size:contain;
+        }
+        #c{
+            width:300px;height:500px;
+            border:2px solid green;
+            background:url(images/station.jpg) no-repeat;
+            background-size:100% 100%;
+            /*가로축 세로축 순서로 맞춰짐 사진 비율과 상관없이 배경크기에 맞춤*/
+            /*http://www.colorzilla.com/gradient-editor/에서 그라데이션 코드 제공*/
+        }
+    </style>
+</head>
+<body>
+    <div id="a"></div>
+    <div id="b"></div>
+    <div id="c"></div>
+</body>
+</html>

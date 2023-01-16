@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가입하기</title>
+    <style>
+        form fieldset { margin : 10px 0;}
+        form legend { font-size:18px;
+                        color:#06F;
+                        font-weight:600; }
+        form label.reg { font-size:14px;
+                            width:120px;
+                            float:left; }/*label.reg 라벨태그 이면서 클래스명이 reg인것 label .reg라벨태그 하위에 있는 클래스명이 reg인것*/
+                            /*float:left 는 공간을 왼쪽으로 배치해라 float는 width와 세트임*/
+        form label em{ font-size:15px;
+                        color:red;
+                        font-weight:800;}
+        form ul li{ list-style:none;margin: 10px 0; }/*태그들은 기본값의 여백을 가지고 있음. 0이어도 여백이 없는게 아님.*/
+        form fieldset.sendform {text-align:center;}
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset class="login"><!--오토포커스는 checked와 비슷한건데 커서가 실행되는 지점을 설정할 수 있음.-->
+            <legend>로그인</legend>
+            <label for="user id">아이디</label>
+            <input type="text" id="user id" size="10" autofocus>
+            <label for="user_pw">비밀번호</label>
+            <input type="password" id="user_pw" size="10">
+            <input type="submit" value="로그인">
+        </fieldset>
+        <fieldset class="register">
+            <legend>가입하기</legend>
+            <ul><!--autocomplet은 자동완성 required는 필수 입력 공란으로 두면 입력란을 작성하라고 뜸-->
+                <!--tel은 입력할 때 핸드폰 자판이 전체자판에서 숫자자판으로 바뀜-->
+                <!--이름지정은 언더바_를 이용하거나 2번째나 3번째 단어에 대문자를 이용하여 많이 사용함.-->
+                <li><label class="reg" for="new_id">아이디<em>*</em></label>
+                <input type="text" id="new_id" size="20" autocomplete="on" required></li>
+                <li><label class="reg" for="new_pw1">비밀번호<em>*</em></label>
+                <input type="password" id="new_pw1" size="20" required></li>                
+                <li><label class="reg" for="new_pw2">비밀번호 확인<em>*</em></label>
+                <input type="password" id="new_pw2" size="20" required></li>
+                <li><label class="reg" for="user_name">이름<em>*</em></label>
+                <input type="text" id="user_name" size="20" required></li>
+                <li><label class="reg" for="user_mail">메일 주소<em>*</em></label>
+                <input type="email" id="user_mail" size="20" required></li>
+                <li><label class="reg" for="user_tel">전화번호</label>
+                <input type="tel" id="user_tel" size="20"></li>
+            </ul>
+        </fieldset>
+        <!--submit은 DB에 저장해라 전송해라, reset은 전체 리셋-->
+        <fieldset class="sendform"><!--인라인 태그(블록태그x)는 텍스트가 아닌데도 불구하고 text align으로 정렬 가능-->
+            <input type="submit" value="가입하기">
+            <input type="reset" value="다시쓰기">
+        </fieldset>
+    </form>
+</body>
+</html>

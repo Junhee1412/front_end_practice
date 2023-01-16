@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">   
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <style>
+   </style>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script>
+	
+	</script>
+</head>
+<body>
+	<div class="container">
+		<form action=""></form>
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text">@</span>
+				</div>
+				<input type="text" class="form-control" placeholder="이메일을 입력하세요..."
+				style=width:100px/>
+			</div>
+	</div>
+</body>
+</html>

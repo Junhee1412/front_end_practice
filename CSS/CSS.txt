@@ -1,0 +1,49 @@
+CSS(cascading style sheet)
+
+내부스타일 시트 - style태그를 이용해서 html 안에 넣어서 함
+외부스타일 시트 - link태그를 이용해서 디자인을 진행
+(다른 html 파일에도 입력하기 용이함)
+
+link - href - 경로 rel - 관계 type - text/css(텍스트 파일로 된 css파일)
+
+a[href ^= "https://"] {font-style:italic;}
+지정한 문자로 시작하면~ 적용해라
+
+a[href $= "xls"] {padding-right:25px;}
+지정한 문자로 끝나면 ~ 적용해라
+
+li[title *="2022"] {font-weight:700'}
+지정한 문자를 포함하면 ~ 적용해라
+
+<li title="last update:2022-11">
+
+가상클래스
+a:link - 사용자가 아직 방문을 하지 않은 링크 그냥 보는 상태 평상시
+visited - 한번 이상 방문한 링크에 대한 스타일
+active - 링크를 클릭했을때의 스타일
+hover - 마우스를 포인터에 올려 놓았을 때 
+focus - 해당 요소에 초점이 맞춰졌을 때
+
+font-family: KakaoBig,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,sans-serif;
+
+h1:not([class="show"]) {display: none;}
+h1태그중 클래스가 show인것만 빼고 보이지 말아라.
+
+li:not(:last-child){color :green;}
+li태그중 마지막 li만 빼고 글자색 적용.
+
+
+<link href="css/tablet.css" rel="stylesheet" type="text/css" media="screen and (min-width:321px)">
+/* 321px 이상의 화면에서는 tablet.css를 링크해서 사용하도록 지정 */
+
+<link href="css/tablet.css" rel="stylesheet" type="text/css" media="screen and (min-width:321px) and (max-width:768px)">
+/* 화면너비가 321이상이고 768이하일 경우 tablet.css.를 링크해서 사용하도록 지정 */
+
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0,maximum-scale=3.0">
+유저가 크기 변동할 수 있게 확대 가능하게(3배까지)
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0,maximum-scale=0.25">
+축소는 0.25배까지 가능하게 한다.
+
+모바일은 용량, 데이터가 있어서 필요한 것만 넣어야하고 미디어 스크린으로 전부 넣어야함.
+PC를 먼저하면 필요한거 다 넣고 줄여야함. display:none으로 안보이게 할 수 있음.
+회사마다 다름.

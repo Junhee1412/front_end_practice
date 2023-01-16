@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition 실무</title>
+    <style>
+        *{margin:0;padding:0;}
+        div{
+            width:300px;
+            height:200px;
+            position:absolute;
+            top:30px;
+            left:30px;
+            overflow:hidden;
+            cursor:pointer;
+        }
+        img{/*img size = 100%*/
+            transform:scale(1);
+            transition:all .2s;
+            -webkit-transition:all .2s;
+            -moz-transition:all .2s;
+            -ms-transition:all .2s;
+            -o-transition:all .2s;
+        }
+        div:hover img{
+            transform:scale(1.1)
+        }
+        span{
+            width:300px;
+            height:200px;
+            display:block;
+            background-color:rgba(0,0,0,0.5);
+            color:white;
+            line-height:200px;
+            font-size:2em;
+            text-align:center;
+            position:absolute;
+            top:-200px;
+            transition:all .2s;
+            -webkit-transition:all .2s;
+            -moz-transition:all .2s;
+            -ms-transition:all .2s;
+            -o-transition:all .2s;
+        }
+        div:hover span{/*호버했을때 변하는것만 적는다.*/
+            top:0px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="images/prod1.jpg">
+        <span>상세설명</span>
+    </div>
+</body>
+</html>

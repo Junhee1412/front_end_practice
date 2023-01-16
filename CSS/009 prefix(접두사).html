@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prefix(접두사)</title>
+    <style>
+        .myphoto{
+            position:absolute;/*float는 테트리스 position은 원하는 위치에 마음대로 조정할 수 있음.
+            absolute는 부모를 기준으로*/
+            left: 50px;
+            top:70px;
+            transform:rotate(15deg);/*transform = 변형 다양한 변형 중 rotate*/
+            /*크로스 브라우징 해야함*/
+            -webkit-transform:rotate(15deg);/*사파리 크롬*/
+            -moz-transform:rotate(15deg);/*파이어폭스*/
+            -o-transform:rotate(15deg);/*오페라*/
+            -ms-transform:rotate(15deg);/*인터넷 익스플로러*/
+        }
+    </style>
+</head>
+<body>
+    <img class="myphoto" src="images/station.jpg">
+</body>
+</html>

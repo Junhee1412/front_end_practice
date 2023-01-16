@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>하위선택자</title>
+    <style>/*#container > 는 자식만(모든 자식 포함)
+             #container 는 자식에 손주까지
+             header + p는 첫번째 동생 첫번째 동생이 p가 아니면 적용 안됨.
+             header ~ p는 모든 동생 p에 적용함*/
+             header ~ p{color:purple;}
+             header + p{color:blue;}
+        #container > ul{
+            border:1px dotted red;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <header><h1>예약 방법 및 요금</h1></header>
+        <p>우리 펜션에 예약하려면?</p>
+        <p>우리 펜션에 예약하려면?</p>
+        <p>우리 펜션에 예약하려면?</p>
+        <ul>
+            <li>예약 방법
+                <ul>
+                    <li>직접 통화</li>
+                    <li>문자 남기기</li>
+                </ul>
+            </li>
+            <li>요금
+                <ul>
+                    <li>1인 : 40,000원</li>
+                    <li>2인 : 60,000원</li>
+                    <li>3인 : 80,000원</li>
+                    <li>4인 : 100,000원</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

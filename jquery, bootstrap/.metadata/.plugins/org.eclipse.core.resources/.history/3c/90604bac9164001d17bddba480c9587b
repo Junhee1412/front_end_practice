@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+		<script src="./js/jquery-3.6.1.min.js"></script>
+	<script>
+	
+	</script>
+</head>
+<body>
+	<button>JQuery Effect - toggle</button>
+	<div class="page">
+		<h1>[단독] 경기도, 對北 밀가루 지원금 10억 줬다는데… 8억 증발 미스터리</h1>
+		<p>이재명 민주당 대표가 경기지사 재직 때인 2019년 경기도가 대북 교류 단체 ‘아태평화교류협회(아태협)’에 지원한 15억원 가운데 8억원의 행방이 묘연한 것으로 전해졌다. 당시 경기도는 북한 어린이 급식용 밀가루 지원 사업비 10억원, 미세 먼지 저감용 묘목 지원 사업비 5억원 등 총 15억원을 지급했다고 한다.</p>
+	</div>
+</body>
+</html>

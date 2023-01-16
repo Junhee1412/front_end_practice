@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  	$(function() {});
+  </script>
+</head>
+<body>
+	<button id="open-button">일정생성</button>
+	<div id="output"></div>
+	<div id="dialog" title="JQuery UI Dialog">
+		<h1>JQuery Create Schedule</h1>
+		<label for="event_name">일정이름</label>
+		<input type="text" id="event_name" />
+		<label for="event_date">일정날짜</label>
+		<input type="text" id="event_date" />
+	</div>
+</body>
+</html>

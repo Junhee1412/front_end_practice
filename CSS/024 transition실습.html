@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition실습</title>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            background-color: red;
+            transition:all 1s;/*본인의 속성으로 가지고 있어야 함.*/
+            -webkit-transition:all 1s;
+            -moz-transition:all 1s;
+            -ms-transition:all 1s;
+            -o-transition:all 1s;
+        }
+        div:active{
+            width:300px;
+            height:300px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+		<script src="./js/jquery-3.6.1.min.js"></script>
+	<script>
+		/*
+			JQuery Effect
+			
+			A. effect method
+			
+			show()        : 문서객체를 보이기
+			hide()        : 문서객체를 감추기
+			toggle()      : show, hide를 번갈아 수행하기
+			slideDown()   : 슬라이딩 효과를 보이게하는 것
+			slideUp()     : 슬라이딩 효과를 감추기
+			slideToggle() : slideUp, slideDown을 번갈아 수행하기
+			fadeIn()      : 서서히 보이기
+			fadeOut()     : 서서히 감추기
+			fadeToggle()  : fadeIn, fadeOut을 번갈아 수행하기
+			
+			B. effect 4가지 형태
+						
+			1. $(선택자).method()
+			2. $(선택자).method(speed) : slow, normal, fast, ms(숫자)
+			3. $(선택자).method(speed, callback) : 끝나면 callback을 실행되라.
+			4. $(선택자).method(speed, easing, callback) : 애니메이션효과(잘사용하진 않음.)
+			
+		*/
+/* 		$(function(){
+			$('button').click(function() {
+				$('.page').toggle(1000);
+			}); */
+		$(function(){
+			$('button').click(function(){
+				$('.page').fadeToggle(2000, function(){
+					alert('JJJ');
+				})
+			})
+		});
+	</script>
+</head>
+<body>
+	<button>JQuery Effect - toggle</button>
+	<div class="page">
+		<h1>[단독] 경기도, 對北 밀가루 지원금 10억 줬다는데… 8억 증발 미스터리</h1>
+		<p>이재명 민주당 대표가 경기지사 재직 때인 2019년 경기도가 대북 교류 단체 ‘아태평화교류협회(아태협)’에 지원한 15억원 가운데 8억원의 행방이 묘연한 것으로 전해졌다. 당시 경기도는 북한 어린이 급식용 밀가루 지원 사업비 10억원, 미세 먼지 저감용 묘목 지원 사업비 5억원 등 총 15억원을 지급했다고 한다.</p>
+	</div>
+</body>
+</html>

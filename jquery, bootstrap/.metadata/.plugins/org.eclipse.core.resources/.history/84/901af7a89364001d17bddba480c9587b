@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+		<script src="./js/jquery-3.6.1.min.js"></script>
+	
+	<style>
+	*{margin:0px; padding:0px;}
+	#box{
+	background:mediumseagreen;
+	width:100px;
+	height:100px;
+	position : absolute;
+	}
+	
+	</style>
+	<script>
+	 /*
+	 	Animation
+	 	
+	 	A. 메서드 형태
+	 	1. $().animation(object)
+	 	2. $().animation(object, speed)
+	 	3. $().animation(object, speed, easing)
+	 	4. $().animation(object, speed, easing, callback)
+	 
+	 	B. animation 옵션
+	 	
+	 	opacity(투명도), 
+	 	height, width(크기), 
+	 	top, left(위치), 
+	 	margin, padding(여백), 
+	 	bottom
+	 	
+	 	C. animation 정지
+	 	1. $(선택자).stop()
+	 	2. $(선택자).stop(clearQueue)
+	 	3. $(선택자).stop(clearQueue, goToEnd)	 	
+	 */
+	 
+	 $(function(){
+		$('button').click(function(){})
+	 //animation효과는 누적처리(animation Queue)
+	 	$('#box').click(function(){})
+	 })
+	 
+	</script>
+	
+</head>
+<body>
+	<button>Start Animation</button>
+	<div id="box"></div>
+</body>
+</html>

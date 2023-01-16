@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Insert title here</title>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+      crossorigin="anonymous"></script>
+   <script>
+      /*
+         jQuery Effect
+         A. effect method
+            1. show() : 문서객체를 보이게 하는 매서드
+            2. hide() : 숨기기/감추기 메서드
+            3. toggle() : 쇼,하이드 번갈아 수행.
+            4. slideDown() : 슬라이딩 효과 보이게함
+            5. slideUp() : 슬라이딩 효과 감추기
+            6. slideToggle() : slideDown, slideUp 번갈아 수행
+            7. fadeIn() : 서서히 보이기
+            8. fadeOut() : 서서히 감추기
+            9. fadeToggle() : fadeIn, fadeOut 번갈아 수행
+
+         B. effect 4가지 형태
+            1. $(선택자).method()
+            2. $(선택자).method(speed) : slow, normal, fast, ms(숫자)
+            3. $(선택자).method(speed, callback) : effect가 끝나면 callback 함수를 실행
+            4. $(선택자).method(spped, easing, callback) : easing(애니메이션효과) // 요건 잘 안쓴다.
+      */
+      $(function(){
+         $('button').click(function(){
+            $('.page').fadeToggle(1000,function(){
+               alert('제이쿼리 이팩트 피니시드');
+            });
+         });
+      });
+   </script>
+</head>
+<body>
+   <button>JQUERY EFFECT - TOGGLE</button>
+   <!-- div.page>(h1+p) -->
+   <div class="page">
+      <h1>블랙핑크</h1>
+      <p>인 유어 에어리아</p>
+   </div>
+</body>
+</html>

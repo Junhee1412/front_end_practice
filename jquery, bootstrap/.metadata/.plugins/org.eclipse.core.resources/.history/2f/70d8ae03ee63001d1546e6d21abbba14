@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+		<script src="./js/jquery-3.6.1.min.js"></script>
+	<script>
+		$(function() {
+			//2초마다 이미지객체를 이동
+		});
+	</script>
+</head>
+<body>
+	<img src="./img/blackpink_01.jpg" alt="" />
+	<img src="./img/blackpink_02.jpg" alt="" />
+	<img src="./img/blackpink_03.jpg" alt="" />
+</body>
+</html>

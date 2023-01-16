@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    	crossorigin="anonymous"></script>
+	<script>
+	//자손 선택자(>), 후손 선택자(공란)
+		$(function() {
+			/* $('*').css('color', 'red'); */ //우선순위때문에 먼저 적용됨.
+			$('body > *').css('background-color', 'green'); //자손
+			$('body *').css('background-color', 'purple'); //자손(blank)
+		});
+	</script>
+</head>
+<body>
+	<!-- div>ul>li*6 -->
+	<div>
+		<ul>
+			<li>Apple</li>
+			<li>Dog</li>
+			<li>Cat</li>
+			<li>Horse</li>
+			<li>Elephant</li>
+			<li>Giraffe</li>
+		</ul>
+	</div>
+</body>
+</html>

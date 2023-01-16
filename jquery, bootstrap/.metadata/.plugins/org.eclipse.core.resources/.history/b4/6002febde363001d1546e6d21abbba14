@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    	crossorigin="anonymous"></script>
+	<script>
+		$(function(){
+		//$('h1').filter().css()
+		$('h1').filter(':even').css({color:'red', background:'black'});
+		$('h1').filter(':odd').css({color:'red', background:'green'});
+		$('h1').filter(':index:3n').css({color:'white', background:'mediumseagreen'});
+		});
+		//실습1. 홀수 폰트색상 red, 배경 green
+		//실습2. 3개씩 건너서 폰트색상 white, 배경 mediumseagreen 인덱스 전달받아서 나머지 연산
+	</script>
+</head>
+<body>
+	<h1>header - 1</h1>
+	<h1>header - 2</h1>
+	<h1>header - 3</h1>
+	<h1>header - 4</h1>
+	<h1>header - 5</h1>
+	<h1>header - 6</h1>
+</body>
+</html>

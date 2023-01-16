@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>웹 폰트</title>
+    <style>
+        body{background-color: #09280B}
+        @font-face{/*@은 css3임*/
+            font-family:'myband'; /*meta name처럼 내가 지정해주는것임.*/
+            src:url('font/Band.eot');
+            src:url('font/Band.ttf') format('truetype');
+            src:url('font/Band.woff') format('woff');
+        }
+        h1{font-family:myband;font-size:3em;color:yellow;}
+        /*em은 반응형 폰트 사이즈 M기준 3배*/
+        p{font-family:myband;color:white;}
+    </style>
+</head>
+<body>
+    <h1>HTML5 AND CSS3</h1>
+    <p>HTML5 AND CSS3</p>
+</body>
+</html>

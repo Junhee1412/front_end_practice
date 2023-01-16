@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+<body>
+    <h1>NAVER</h1>
+    <form>
+        <fieldset id="reg">
+            <ul>
+                <li><label class="user_inform" for="user_id"><strong>아이디</strong></label>
+                    <div id="user_id">
+                <input type="text" id="user_id1" size="20" required autofocus>
+                <input id="user_id2" value="     @naver.com" readonly></li>
+                </div>
+                <li><label class="user_inform" for="user_pw1"><strong>비밀번호</strong></label>
+                <input type="password" id="user_pw1" size="20" required></li>
+                <li><label class="user_inform" for="user_pw2"><strong>비밀번호 재확인</strong></label>
+                <input type="password" id="user_pw2" size="20" required><br><br></li>
+                <li><label class="personal_inform" for="name"><strong>이름</strong></label>
+                <input type="text" id="name" required><br></li>
+                <li><label class="personal_inform" for="birth"><strong>생년월일</strong></label>
+                    <div id="bir">
+                <input type="text" id="birth" size="5" required placeholder="년(4자)">
+                <label class="personal_inform" for="month"></label>
+                    <select id="month">
+                        <option value="none" selected>월</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+        <label class="personal_inform" for="day">
+        <input type="text" id="day" size="2" required placeholder="일"></li></label>
+        </div>
+        <li><label class="personal_inform" for="sex"><strong>성별</strong></label></li>
+        <select id="sex">
+            <option value="none" selected>성별</option>
+            <option value="male">남자</option>
+            <option value="female">여자</option>
+            <option value="no choice">선택 안함</option>
+        </select>
+        <li><label class="personal_inform" for="self-confirmation"><strong>본인 확인 이메일<span>(선택)</span></strong></label></li>
+        <input type="email" id="self-confirmation" size="20" placeholder="선택입력"></label>
+        <div id="cell_phone">
+        <li><label class="phone_number" for="country code"></label><strong>휴대전화</strong></li>
+        <select id="country_code">
+            <option value="kor" selected>대한민국 +82</option>
+            <option value="ame/can">미국/캐나다 +1</option>
+            <option value="chi">중국 +86</option>
+        </select>
+        <label class="phone_number" for="phone_number"></label>
+        <input type="text" id="phone_number" size="20" placeholder="전화번호 입력" required>
+        <button type="submit" value="submit">인증번호 받기</button>
+        <label class="phone_number" for="verification_code">
+            <input type="text" id="verification_code" size="20" placeholder="인증번호 입력하세요" required>
+        </label>
+        </div>
+        </ul>
+        <button type="submit" value="submit">가입하기</button>
+    </fieldset>
+    </form>
+</body>
+</html>

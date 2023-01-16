@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    	crossorigin="anonymous"></script>
+	<script>
+		//속성선택자
+		$(function() {});
+	</script>
+</head>
+<body>
+<input type="text" /><br>
+<input type="password" /><br>
+<input type="radio" /><br>
+<input type="checkbox" /><br>
+<input type="file" /><br>
+<select name="" id="">
+	<option value="Apple">Apple</option>
+	<option value="Dog">Dog</option>
+	<option value="Cat">Cat</option>
+	<option value="Horse">Horse</option>
+	<option value="Elephant">Elephant</option>
+</select>
+</body>
+</html>

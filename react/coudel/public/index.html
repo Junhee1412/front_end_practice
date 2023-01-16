@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>main_page</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    /* 상단 메뉴바입니다. */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 9999;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+    }
+    #logo {
+      position: absolute;
+      top: -10px;
+      width: 50px;
+      height: 50px;
+    }
+    #logo:hover img {
+      transform: scale(1.1);
+    }
+    #head {
+      width: 100%;
+      height: 85px;
+      background-color: violet;
+    }
+    li {
+      font-weight: bold;
+      font-size: 15px;
+      margin-right: 20px;
+      width: 100px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 10px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    li:hover {
+      background-color: black;
+    }
+    li:hover a {
+      color: white;
+    }
+
+    /* section입니다. */
+    #web_info {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    section {
+      height: 700px;
+      line-height: 50px;
+    }
+    #first_section {
+      background-color: white;
+    }
+    #first_info {
+      position: relative;
+      top: 5%;
+      padding-left: 40px;
+    }
+    #second_section {
+      background: url(image/second_section.jpg) no-repeat;
+      background-size: 100% 100%;
+    }
+    #second_info {
+      position: relative;
+      top: 40%;
+      padding-left: 40px;
+    }
+    #download {
+      font-size: 20px;
+      width: 120px;
+      text-align: center;
+      height: 50px;
+      margin-left: -5px;
+      border-radius: 10px;
+    }
+    #download:hover {
+      background-color: black;
+    }
+    #download:hover strong a {
+      color: white;
+    }
+    #third_section {
+      background: url(image/third_section.jpg) no-repeat;
+      background-size: 100% 100%;
+    }
+    #third_info {
+      color: white;
+      position: relative;
+      top: 70%;
+      padding-left: 40px;
+    }
+    #forth_section {
+      background: url(image/forth_section.jpg) no-repeat;
+      background-size: 100% 100%;
+    }
+    #forth_info {
+      color: white;
+      position: relative;
+      top: 60%;
+      padding-left: 40px;
+    }
+    #fifth_section {
+      background: url(image/fifth_section_1.jpg) no-repeat;
+      background-size: 100% 100%;
+    }
+    #fifth_info {
+      color: black;
+      position: relative;
+      top: 70%;
+      padding-left: 40px;
+    }
+    /* 광고영역 및 footer입니다. */
+    aside {
+      width: 8%;
+      height: 35%;
+      border: 1px solid black;
+      z-index: 999;
+      position: fixed;
+      right: 100px;
+      top: 30%;
+    }
+    footer {
+      width: 100%;
+      height: 150px;
+      font-weight: bold;
+      position: absolute;
+      background-color: gray;
+    }
+    footer p {
+      margin: 20px;
+    }
+    address {
+      font-style: normal;
+      margin: 20px;
+    }
+  </style>
+  <body>
+    <header>
+      <div id="head">
+        <div id="logo">
+          <a href="#">
+            <img
+              src="./image/Logo.png"
+              alt="logo"
+              width="100px;"
+              height="100px;"
+            />
+          </a>
+        </div>
+        <div id="menu_bar">
+          <ul id="first_menu">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+
+            <li><a href="#">앱 설치하기</a></li>
+          </ul>
+          <ul id="second_menu">
+            <li><a href="#">쿠딜추천</a></li>
+            <li><a href="#">쿠폰발급</a></li>
+            <li><a href="#">이벤트 정보</a></li>
+            <li><a href="#">배달쿠폰</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div id="web_info">
+      <section id="first_section">
+        <div id="first_info">
+          <div id="root"></div>
+        </div>
+      </section>
+      <section id="second_section">
+
+        <div id="second_info">
+          <h2>합리적인 소비를 위한</h2>
+          <h2>쿠딜에 오신걸 환영합니다!</h2>
+          <h4>Coupon Mangement & Delivery Service</h4>
+          <div id="download">
+            <strong><a href="#">앱 다운로드</a></strong>
+          </div>
+        </div>
+      </section>
+      <section id="third_section">
+        <div id="third_info">
+          <h2>
+            각종 프랜차이즈를 넘어<br />게임까지 다양한 카테고리의 쿠폰 발급!
+          </h2>
+        </div>
+      </section>
+      <section id="forth_section">
+        <div id="forth_info">
+          <h2>카테고리 관리자들에게 주어지는<br />다양한 혜택까지!</h2>
+        </div>
+      </section>
+      <section id="fifth_section">
+        <div id="fifth_info">
+          <h2>배달비는 가볍게</h2>
+          <h2>배달도 쿠폰이다!</h2>
+        </div>
+      </section>
+      <aside>
+        <a href="#"> ASIDE영역입니다. </a>
+      </aside>
+    </div>
+    <footer>
+      <footer>
+        <p><a href="#">회사소개</a></p>
+        <p>주소 : 서울시 마포구 상수동 324-1 한주빌딩 5층</p>
+        <address>tel.02-2365-7858 seulbinim@gmail.com</address>
+      </footer>
+    </footer>
+  </body>
+</html>

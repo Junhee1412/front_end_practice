@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">   
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <style>
+   </style>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script>
+	
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1>Buttons</h1>
+		<button type="button" class="btn">Basic</button>
+		<button type="button" class="btn btn-default">Default</button>
+		<button type="button" class="btn btn-primary">Primary</button>
+		<button type="button" class="btn btn-success">Success</button>
+		<button type="button" class="btn btn-info">Info</button>
+		<button type="button" class="btn btn-warning">Warning</button>
+		<button type="button" class="btn btn-danger">Danger</button>
+		<button type="button" class="btn btn-link">Link</button>
+		<a href="#" class="btn btn-primary">Link Button</a>
+		<br />
+		<h4>Button Size</h4>
+		<button type="button" class="btn btn-primary btn-lg">Large</button>
+		<button type="button" class="btn btn-primary btn-md">Medium</button>
+		<button type="button" class="btn btn-primary btn-sm">Small</button>
+		<br />
+		<h4>Button - Active, Disable</h4>
+		<button type="button" class="btn btn-primary btn-sm active" >Active</button>
+		<button type="button" class="btn btn-primary btn-sm" disabled>Disabled</button>
+	</div>
+</body>
+</html>

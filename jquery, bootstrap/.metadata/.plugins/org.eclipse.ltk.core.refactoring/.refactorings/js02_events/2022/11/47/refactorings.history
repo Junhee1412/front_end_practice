@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;js02_events/public/js03_keyboard.html&apos; to &apos;js04_keyboard.html&apos;" description="Rename resource &apos;js03_keyboard.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="public/js03_keyboard.html" name="js04_keyboard.html" stamp="1668474074039" updateReferences="true"/>
+</session>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">hello</button>
+</body>
+<script>
+    let person={
+        name : 'sun',
+        who:function(){
+            console.log(this);
+        }
+    };
+    person.who();
+
+    let btn = document.getElementById('btn');
+    btn.addEventListener('click',person.who);
+    //btn에 접근해서 이벤트를 발생시켜라. 클릭하면 person에 접근해서 who함수를 실행해라.
+    //이벤트를 발생시키는 주체가 btn이어서 this는 btn이 출력됨.
+</script>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>position</title>
+    <style>/*애플리케이션은 position을 주로 사용함.*/
+    /*포지션을 쌓는다고 함. z-index 팝업창 위치는 9999로 함(최상단에 뜨게)*/
+        *{margin:0;padding:0;}
+        body{
+            background-color:gainsboro;
+        }
+        #box{
+            position:absolute;
+            left:50px;
+            top:50px;
+            background:#5f6261;
+            width:800px;
+            height:400px;
+        }
+        .sBox{
+            width:100px;
+            height:100px;
+            background-color:white;
+            color:#004F5E;
+            font-size:20px;
+            text-align:center;
+            font-weight:bold;
+            float:left;
+        }
+        #sBox_1{
+            position:relative;/*내 위치를 기준으로*/
+            top:100px;
+            left:0px;
+        }
+        #sBox_2{
+            position:relative;
+            top:100px;
+            left:0px;
+        }
+        #sBox_3{
+            position:relative;
+            top:100px;
+            left:0px;
+        }
+        #sBox_4{
+            position:relative;
+            top:100px;
+            left:0px;
+        }
+        #sBox_5{
+            position:relative;
+            top:0px;
+            left:-200px;
+        }
+        #sBox_6{
+            position:relative;
+            top:200px;
+            left:-300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="sBox" id="sBox_1">1</div>
+        <div class="sBox" id="sBox_2">2</div>
+        <div class="sBox" id="sBox_3">3</div>
+        <div class="sBox" id="sBox_4">4</div>
+        <div class="sBox" id="sBox_5">5</div>
+        <div class="sBox" id="sBox_6">6</div>
+    </div>
+</body>
+</html>

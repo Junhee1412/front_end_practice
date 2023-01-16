@@ -1,0 +1,213 @@
+# 구조 분해 할당 (비구조화 할당)
+
+var x = [1, 2, 3, 4, 5];
+var [y, z] = x;
+console.log(y); // 1
+console.log(z); // 2
+
+----------------------------------
+const array=[1,2];
+const one = array[0];
+const two = array[1];
+
+const array=[1,2];
+const [one, two] = array;
+
+-----------------------------------
+var person={
+  first:"hyeri",
+  last:"yoon",
+            };
+
+var first= person.first;
+var last=person.last;
+
+
+const person={
+  first:"hyeri",
+  last:"yoon",
+            };
+
+const {first, last} = person;
+
+
+const person={
+  name:"hyeri",
+  last:"yoon",
+  links:{
+    social:{
+      youtube:"https://www.youtube.com/",
+    },
+    facebook:"https://www.facebook.com/",
+  },
+};
+
+const {youtube:yt} = person.links.social;
+console.log(yt);
+
+youtube:yt
+변수명을 변경할수 있다.
+
+--------------------------------------------------------
+const person =['ju','hee','25'];
+// name , surname
+const [name, surname] = person;
+console.log(name, surname);
+
+
+const snack=["pizza","ice cream","cake","cookie","Chocolate"];
+const [name, surname,...args] = snack;
+console.log(food);
+
+
+let hungry="yes";
+let full="no";
+
+[hungry, full] = [full, hungry];
+console.log(hungry, full)
+
+---------------------------------------------------
+# 전위 연산자, 후위연산자
+let A = ++B;	// 변수 B의 데이터를 1증가시킨후 변수 A저장
+let A = B++;	// 변수 A에 변수 B의 데이터를 저장한 후 B의 데이터를 1 증가
+
+
+
+let a =1;
+let b = ++a;
+
+a=a+1;	//2
+b=a;	//2
+console.log(`a = ${a} , b= ${b}`)
+
+
+let c = 1;
+let d = c++;
+console.log(`c = ${c} , d= ${d}`)
+// let d=c;
+c=c+1
+d=1, c=2
+
+
+  var num1=10;        
+   var num2=20;        
+   var result;           
+
+   num1--;          	
+   console.log(num1);//9
+
+   num1++;       
+   console.log(num1);  //10  
+	
+// 변수 A에 변수 B의 데이터를 저장한 후 B의 데이터를 1 증가
+    result=num2++;//result:20, num2:21
+   console.log(result); 
+	// 변수 B의 데이터를 1증가시킨후 변수 A저장	 
+   result=++num2;	// num2:22 , result:22
+   console.log(result); 
+-------------------------------------------------
+const arr = [1,2,3,4];
+const arr2x = arr.map(item => item++);
+console.log(arr);
+console.log(arr2x[0]);
+
+
+-------------------------------------------
+<div class="fruits">
+  <p>Apple</p>
+  <p>Banana</p>
+  <p>Orange</p>
+  </div>
+
+
+
+const fruits =Array.from(document.querySelectorAll(".fruits p"));
+const fruitNames = fruits.map(fruit => fruit.textContent);
+console.log(fruitNames);
+
+
+//Array.from : 배열이 아닌 객체를 받아서 배열로 반환
+
+const fruits =document.querySelectorAll(".fruits p");
+const fruitArray = Array.from(fruits, fruit =>{
+ return fruit.textContent;
+});
+
+console.log(fruitArray);
+
+
+
+----------------------------------------
+const array = [1,2,3,4,5];
+let found=array.find(e => e>3);
+console.log(found);
+
+// Array.find() : 조건을 충족하는 첫번째 원소를 반환
+console.log(array);
+let arrEvery=array.every(e => e>3);
+console.log(arrEvery);
+------------------------------------
+const veggie=["tomato","cucumber","beans"];
+const newVeggie = veggie;
+veggie.push("peas");
+console.log(veggie);
+console.log(newVeggie);
+-------------------------------------
+# 프로토타입
+- 자바스크립트는 프로토타입을 기반으로 상속을 구현함
+- 상위 객체의 역할을 하는 객체로서 다른 객체에 공유 프로퍼티(메서드 포함)을 제공
+- 모든 객체는 하나의 프로토타입을 갖는다.
+- 모든 프로토타입은 생성자 함수와 연결되어 있다.
+- 프로퍼티를 사용하는 주체에 따라 다르다.
+
+function person(name) {
+    this.name = name;
+  //  console.log(this);
+}
+
+person.prototype.sayName = function() {
+    console.log(`name is ${this.name}`);
+};
+
+const me = new person('Jina');
+const you = new person('junsu');
+
+me.sayName();
+you.sayName();
+
+
+
+const obj={}
+const obj1 = new();
+
+
+
+객체 리터럴   / Object	/ Object.prototype
+함수 리터럴  / Function 	/Function.prototype
+배열 리터럴 / Array 		/Array.prototype
+정규 표현식 / RegExp 	/ RegExp.prototype
+
+
+	      소유                 사용 주체    사용목적
+prototype  / constructor        / 생성자 함수 /생성자 함수가 자신이 
+				       생성할 객체의 프로토타입                                                             을 할당하기 위해
+
+__proto__   / 모든 객체          / 모든 객체 / 객체가 자신의 프로토타입				    에 접근 또는 교체 하기 위해 
+
+const myTest = { x: 20 };
+
+const obj = {
+    y: 40,
+
+    __proto__: myTest
+};
+//객체가 자신의 프로토타입에 접근 또는 교체 하기 위해
+console.log(`obj.x = ${obj.x}, obj.y = ${obj.y}`);
+
+# class:template이라고 보면됨.
+- class는 object(인스턴스)를 만들 수 있는 틀이다
+- class 자체에는 data가 들어있지 않음
+- 틀(template)을 정의해서 한 번만 선언 한다
+
+
+

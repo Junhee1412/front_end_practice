@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Insert title here</title>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+      crossorigin="anonymous"></script>
+      <style>
+         .reverse{
+            color:white;
+            background-color:black;
+            }
+      </style>
+   <script>
+      // ON() : 이벤트를 문서객체에 연결하는 메서드.
+      $(function(){
+         // 1. on('이벤트이름', function(이벤트){})
+         $('h1').on('click',function(index){ // 클릭이벤트 발생하면 function 실행해라.
+            // 실습. h1을 클릭할 때마다 +를 연결하기
+            $(this).html(function(index, text){
+               return text+'+';
+            });
+         });
+         /* 실습2. mouseenter : reverse 클래스 추가 - addClass
+               mouseleave : reverse 클래스 삭제 - removeClass */
+               /*
+         $('h1').on('mouseenter',function(){
+            $(this).addClass('reverse');
+         });
+         $('h1').on('mouseleave',function(){
+            $(this).removeClass('reverse');
+         });
+         // 실습3. mouseenter, mouseleave를 객체로 정의
+         $('h1').on({
+            mouseenter:function(){$(this).addClass('reverse');},
+            mouseleave:function(){$(this).removeClass('reverse');}
+         });*/
+         // 실습4. hover()
+         $('h1').hover(
+            function(){$(this).addClass('reverse');}, // 마우스 올렸을 때 addClass하고
+            function(){$(this).removeClass('reverse');} // 마우스 벗어났을때 remove하라는 거인듯.
+         );
+      });
+   </script>
+</head>
+<body>
+   <!-- h1{header-$}*3 -->
+   <h1>header-1</h1>
+   <h1>header-2</h1>
+   <h1>header-3</h1>
+</body>
+</html>

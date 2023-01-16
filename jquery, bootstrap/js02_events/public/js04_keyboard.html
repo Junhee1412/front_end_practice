@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+		<script src="./js/jquery-3.6.1.min.js"></script>
+	<script>
+		/*
+			Keyboard event
+			
+			keydown : 키보드를 누를 때 발생되는 이벤트
+			keypress : 글자가 입력될 때 발생
+			keyup : 키보드를 손에서 뗄 때
+			
+			키보드 이벤트가 발생되는 순서
+			1. 키보드를 누를 때 keydown 발생
+			2. 글자가 입력이 될 때 keypress 발생
+			3. 키보드를 뗄 때 keyup 발생
+		
+		*/
+		$(function() {
+			/* $('textarea').on({
+				keydown: function() {},
+				keyup: function() {}
+				}) */
+			$('textarea').keydown(function(){
+				//남은 글자를 확인
+				var len = $(this).val().length;
+				var rem = 50 - len;
+				var xxx = 
+				$('h1').html(rem);
+				//남은 글자가 > 0 h1을 black으로, 남은글자가 없으면 red로
+				if(rem>0){
+					$('h1').css('color', 'black');
+				}else{
+					$('h1').css('color', 'red');
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<!-- div>(p+h1+textarea) -->
+	<div>
+		<p>야생화 - 하얗게 피어난 얼음 꽃 하나가</p>
+		<h1>50</h1>
+		<textarea name="" id="" cols="50" rows="10"></textarea>
+	</div>
+</body>
+</html>

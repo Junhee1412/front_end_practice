@@ -1,0 +1,33 @@
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">   
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <style>
+   </style>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>     
+   <script>
+   
+   </script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4" style="background-color:skyblue">col-sm-4</div>
+			<div class="col-sm-4" style="background-color:gray">col-sm-4</div>
+			<div class="col-sm-4" style="background-color:yellow">col-sm-4</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2" style="background-color:skyblue">col-sm-2</div>
+			<div class="col-sm-2" style="background-color:gray">col-sm-2</div>
+			<div class="col-sm-8" style="background-color:yellow">col-sm-8</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-1" style="background-color:skyblue">col-lg-1</div>
+			<div class="col-lg-1" style="background-color:gray">col-lg-1</div>
+			<div class="col-lg-10" style="background-color:yellow">col-lg-10</div>
+		</div>
+	</div>
+	
+	<p class="bg-primary">Bootstrap Color</p>
+</body>
+</html>

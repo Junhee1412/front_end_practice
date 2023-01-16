@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    	crossorigin="anonymous"></script>
+	<script>
+	
+	</script>
+</head>
+<body>
+	<!-- img[src="./img/blackpink_$$.jpg" alt=""]*3 -->
+	<img src="./img/blackpink_01.jpg" alt="" />
+	<img src="./img/blackpink_02.jpg" alt="" />
+	<img src="./img/blackpink_03.jpg" alt="" />
+</body>
+</html>

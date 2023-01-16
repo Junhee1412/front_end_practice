@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server port="8080">
+  <module context="js01_jquery" name="js01_jquery" path="D:/Back/02.javascript/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/js01_jquery" type="static"/>
+  <module context="js02_events" name="js02_events" path="D:/Back/02.javascript/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/js02_events" type="static"/>
+  <module context="js03_effect" name="js03_effect" path="D:/Back/02.javascript/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/js03_effect" type="static"/>
+  <module context="js04_jquery_ui" name="js04_jquery_ui" path="D:/Back/02.javascript/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/js04_jquery_ui" type="static"/>
+  <module context="js05_bootstrap" name="js05_bootstrap" path="D:/Back/02.javascript/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/js05_bootstrap" type="static"/>
+</server>

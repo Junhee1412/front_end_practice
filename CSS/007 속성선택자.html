@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>속성선택자</title>
+    <style>
+        ul li{
+            list-style:none;
+            font-size:16px;
+            margin-top:10px;
+        }
+        ul li label{
+            float:left;
+            width:80px;
+            line-height:25px;
+        }
+/*대괄호 앞엔 어떤 태그가 와도 상관없음. 대괄호 안에 어떤게 와도 됨*/
+/*not함수 tex제외 소괄호 꼭 써야 적용됨.*/
+        input:not([type="text"]) {/*input태그 중 type이 text와 같으면*/
+            width:150px;
+            background-color:skyblue;
+            border:1px solid #000;
+        }
+/*javascript에서 조건문이 가능하지만 매우 복잡함.경로가 너무 많음.Document부터 시작
+그래서 css를 사용해서 조건문을 사용함. JQuery 용량 무거움 외부 프로그램 용량도 명령어로 소화 가능해서*/
+        a[href]{/*a태그 중 속성이 href인 것 모두*/
+            background-color: purple;
+        }
+        input[id~="people"]{/*~= id 값 중에 people이 있으면*/
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>예약하기</h1>
+    <form>
+        <fieldset>
+            <legend>예약자 정보</legend>
+            <ul>
+                <li>
+                    <label for="name">예약자</label>
+                    <input type="text" id="name">
+                </li>
+                <li>
+                    <label for="contact">연락처</label>
+                    <input type="tel" id="contact">
+                </li>
+                <li>
+                    <label for="people">성인 인원</label>
+                    <input type="number" id="people">
+                </li>
+                <li>
+                    <label for="people child">유아 인원</label>
+                    <input type="number" id="people child">
+                </li>
+                <li>
+                    <label for="bank">입금 은행</label>
+                    <input type="text" id="bank">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    <a href="#">신청하기</a>
+</body>
+</html>

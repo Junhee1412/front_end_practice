@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">   
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <style>
+   </style>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<script>
+	
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1>Buttons</h1>
+		<button type="button" class="btn">Basic</button>
+		<button type="button" class="btn btn-default">Default</button>
+		<button type="button" class="btn btn-primary">Primary</button>
+		<button type="button" class="btn btn-success">Success</button>
+		<button type="button" class="btn btn-info">Info</button>
+		<button type="button" class="btn btn-warning">Warning</button>
+		<button type="button" class="btn btn-danger">Danger</button>
+		<button type="button" class="btn btn-link">Link</button>
+		<a href="#" class="btn btn-primary">Link Button</a>
+		<br />
+		<h4>Button Size</h4>
+		<button type="button" class="btn btn-primary btn-lg">Large</button>
+		<button type="button" class="btn btn-primary btn-md">Medium</button>
+		<button type="button" class="btn btn-primary btn-sm">Small</button>
+		<br />
+		<h4>Button - Active, Disable</h4>
+		<button type="button" class="btn btn-primary btn-sm active" >Active</button>
+		<button type="button" class="btn btn-primary btn-sm" disabled>Disabled</button>
+		<br />
+		<h4>Button Groups</h4>
+		<div class="btn-group">
+		<button type="button" class="btn btn-success" >File</button>
+		<button type="button" class="btn btn-success" >Print</button>
+			<div class="btn-group">
+				<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Save</button>
+					<div class="dropdown-menu">
+						<a href="#" class="dropdown-item">Save As</a>
+						<a href="#" class="dropdown-item">Save All</a>
+					</div>
+			</div>
+		</div>
+		<br/>
+		<h3>Glyphicons(https://glyphicons.com/)</h3>
+		<h3>https://use.fontawesome.com/</h3>
+		<h3>Ver4 - icons</h3>
+		<i class="fas fa-cloud"></i>
+		<i class="fas fa-users"></i>
+		<i class="fas fa-file"></i>
+		<br/>
+		<h4>Bades</h4>
+		<a href="#">글제목 <span class="badge">5</span></a>
+		<a href="#">글제목 <span class="badge">5</span></a>
+		
+		<h4>Badges on Button</h4>
+		<button type="button" class="btn btn-primary"><span class="badge">5</span></button>
+	</div>
+</body>
+</html>

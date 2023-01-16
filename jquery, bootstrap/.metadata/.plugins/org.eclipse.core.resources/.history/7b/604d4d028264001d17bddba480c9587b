@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+		<script src="./js/jquery-3.6.1.min.js"></script>
+	<script>
+		/*
+			Keyboard event
+			
+			keydown : 키보드를 누를 때 발생되는 이벤트
+			keypress : 글자가 입력될 때 발생
+			keyup : 키보드를 손에서 뗄 때
+			
+			키보드 이벤트가 발생되는 순서
+			1. 키보드를 누를 때 keydown 발생
+			2. 글자가 입력이 될 때 keypress 발생
+			3. 키보드를 뗄 때 keyup 발생
+		
+		*/
+		$(function() {
+			
+		});
+	</script>
+</head>
+<body>
+	<!-- div>(p+h1+textarea) -->
+	<div>
+		<p>야생화 - 하얗게 피어난 얼음 꽃 하나가</p>
+		<h1>150</h1>
+		<textarea name="" id="" cols="50" rows="10"></textarea>
+	</div>
+</body>
+</html>

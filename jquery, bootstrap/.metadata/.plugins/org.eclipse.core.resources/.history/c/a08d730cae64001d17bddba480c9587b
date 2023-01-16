@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Tooltip - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/ui-lightness/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  label, input{
+  display: block;}
+  input.text{margin-bottom: 12px; width: 95%; padding: .4em;}
+  filedset{padding: 0; border:0; margin-top:25px;}
+  h1{font-size:1.2em; margin:.6em 0;}  
+  div#users-contain {width:350px;margin:20px 0;}
+  div#users-contain table{margin:1em 0; border-collapse:collapse;width:100%;}
+  div#users-contain table td, div#users-contain table th
+  {border:1px solid #eee; padding:0.6em 10px;text-align:left;}
+  .ui-dialog .ui-state-error{padding: .3em; }
+  .valdationTips{border:1px solid transparent; padding:0.3em;}
+  </style>
+  
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+	<script>
+	$(function(){
+		var dialog, form, name=$('name'), email=$('email'),password=$('password'),
+			allField=$([]).add(name).add(email).add(password), tips=$('.valdateTips');
+		
+		function updateTips() {}
+		function checkLength() {}
+		function checkRegexp() {}
+		
+		function addUser(){
+			
+			var value = true;
+			allFields.removeClass('ui-state-error');
+			if(valid){
+				$('#users tbody').append("<tr>"+
+						"<td>"+name.val()+"</td>"+
+						"<td>"+email.val()+"</td>"+
+						"<td>"+password.val()+"</td>"+"</tr>");
+				dialog.dialog("close");
+			}
+			return true;
+		}
+		dialog=$('#dialog-form').dialog({
+			autoOpen:false,
+			height: 400,
+			width: 350,
+			modal: true,
+			buttons:{
+				cancel:function(){},
+				close:function(){},
+				"신규회원등록":addUser //사용자작성버튼, addUser함수를 연결
+			}
+		});
+		
+		form=dialog.find("form").on('submit', function(){});
+		
+		$('#create-user').button().on('click', function() {
+			dialog.dialog('open');
+		})
+	})
+	</script>
+</head>
+<body>
+	<div id="dialog-form" title="회원등록하기">
+		<p class="validateTips">모든 입력필드는 필수입니다!</p>
+		
+		<form action="">
+			<fieldset>
+				<label for="name">Name</label>
+				<input type="text" name="name", id="name"
+				value="홍길동" class="text ui-widget-content ui-corner-all"/>
+				<label for="email">Email</label>
+				<input type="text" name="email", id="email"
+				value="hong@gmail.com" class="text ui-widget-content ui-corner-all"/>
+				<label for="password">Password</label>
+				<input type="password" name="password", id="password"
+				value="12345" class="text ui-widget-content ui-corner-all"/>
+				<input type="submit" tabindex="-1" 
+				style="position:absolute; top:-1000px">
+				
+			</fieldset>
+		</form>
+	</div>
+	<div id="users-contain" class="ui-widget">
+	<h1>회원목록</h1>
+	<table id="users" class="ui-widget ui-widget-content">
+		<thead>
+			<tr class="ui-widget-header">
+				<th>홍길동</th>
+				<th>hong@gamil.com</th>
+				<th>12345</th>	
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>홍길동</th>
+				<th>hong@gamil.com</th>
+				<th>12345</th>	
+			</tr>
+		</tbody>
+	</table>
+	</div>
+</body>
+</html>

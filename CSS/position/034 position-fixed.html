@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>position-fixed</title>
+    <style>
+        *{margin:0;padding:0;}
+        section{
+            width:80%;
+            height:2000px;
+            margin:0 auto;
+            border:1px solid black;
+        }
+        #sec_1{
+            width:50%;
+            height:100%;
+            background:skyblue;
+            float:left
+        }        
+        #sec_2{
+            width:50%;
+            height:100%;
+            background:orange;
+            float:left
+        }
+        #top-menu{
+            width:100%;
+            height:50px;
+            background:yellow;
+            position:fixed;
+            left:0;
+            top:0;
+            right:0;
+            transition:all 1s;
+        }
+        #top-menu:hover{
+            height:300px;
+        }
+        #box{
+            width:50px;
+            height:50px;
+            background:black;
+            position:fixed;
+            right:50px;
+            bottom:100px;
+            border-radius:50%;
+            text-align:center;
+            line-height:50px;
+        }
+        #box:before{/*박스 가장 앞 after는 가장 밖 content뒤는 역슬래시(\) 후유니코드*/
+            content:"\25B2";
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div id="top-menu">안녕하세요</div>
+    <div id="box"></div><!--어디에 있든 상관없긴함.-->
+        <section>
+        <div id="sec_1"></div>
+        <div id="sec_2"></div>
+    </section>
+</body>
+</html>

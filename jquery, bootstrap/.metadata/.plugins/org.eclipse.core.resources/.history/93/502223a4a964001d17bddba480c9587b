@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Tooltip - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/ui-lightness/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+	<script>
+	$(function(){
+		
+	})
+	</script>
+</head>
+<body>
+	<div id="dialog-form" title="회원등록하기">
+		<p class="validateTips">모든 입력필드는 필수입니다!</p>
+		
+		<form action="">
+			<fieldset>
+				<label for="name">Name</label>
+				<input type="text" name="name", id="name"
+				value="홍길동" class="text ui-widget-content ui-corner-all"/>
+				<label for="email">Email</label>
+				<input type="text" name="email", id="email"
+				value="hong@gmail.com" class="text ui-widget-content ui-corner-all"/>
+				<label for="password">Password</label>
+				<input type="password" name="password", id="password"
+				value="12345" class="text ui-widget-content ui-corner-all"/>
+				<input type="submit" tabindex="-1" 
+				style="position:absolute; top:-1000px">
+				
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

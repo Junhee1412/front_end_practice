@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ID선택자</title>
+</head>
+<style>
+    *{margin:0;padding:0;}/*전체문서 여백제거*/
+    #title{
+        float:left; /*공간을 가지고 왼쪽에 배치해라 float가 있으면 width는 있어야함.*/
+        margin-left:10px;
+        width:200px;
+        height:110px;
+        background-color:orange;
+        border:1px solid black;
+        text-align:center;/*상하가운데는 어려움 나중에 할 예정*/
+    }
+    #pic1{
+        float:left;/*왼쪽 배치할 예정*/
+        margin-left:10px;
+        width:200px;
+        height:110px;
+    }
+    #pic2{/*새로운 줄로부터 배치되라 줄바꿈.*/
+        float:left;
+        margin-left:10px;
+        width:200px;
+        height:120px;
+    }
+    #pic3{
+        clear:both; 
+        float:left;
+        margin-left:10px;
+        margin-top:20px;
+        width:200px;
+        height:120px;
+    }
+</style>
+<body>
+    <div id="contents">
+        <div id="title">
+            <h2>우리펜션</h2>
+        </div>
+        <div id="pic1">
+            <img src="images/1.jpg">
+        </div>
+        <div id="pic2">
+            <img src="images/2.jpg">
+        </div>
+        <div id="pic3">
+            <img src="images/3.jpg">
+        </div>
+    </div>
+</body>
+</html>

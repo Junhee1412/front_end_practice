@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+		<script src="./js/jquery-3.6.1.min.js"></script>
+	<script>
+		//html(), text(), remove(), empty()
+		$(function() {});
+			//1. html() : 문서객체
+			var h1 = $('h1').html(); //문서객체
+			alert(h1);
+			//2. text() : 문서객체 내부의 문자열
+			//3. remove() : 문서객체를 삭제
+			//4. empty() : 문서객체 내부문자를 삭제
+	</script>
+</head>
+<body>
+	<h1>Header-1</h1>
+	<h1>Header-2</h1>
+	<h1>Header-3</h1>
+	
+	<div class="html"></div>
+	<div class="html"></div>
+	<div class="html"></div>
+	
+	<div class="text"></div>
+	<div class="text"></div>
+	<div class="text"></div>
+</body>
+</html>

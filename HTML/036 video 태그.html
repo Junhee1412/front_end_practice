@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>video 태그</title>
+</head>
+<body>
+    <!--preload는 영상을 미리 읽어들임 장점 : 바로 영상 재생 가능, 단점 : 이미 읽어서 안봐도 비용지불-->
+    <!--controls 컨트롤러 있음-->
+    <!--loop 무한반복재생-->
+    <!--autoplay 끝나면 다시 처음으로 돌아와서 재생해라 안되는 영상 형식, 인터넷도 있음.-->
+    <!--가장 편한 방법은 유튜브로 연결하는 방법 회사에서도 가장 많이 사용함-->
+    <video src="images/gate.mp4" width="450" height="300" preload controls loop autoplay>
+        <source src="images/gate.mp4"><!--사파리, 크롬, 윈도우7/8--><!--유료라는 단점-->
+        <source src="images/gate.ogv"><!--파이어폭스, 오페라--><!--무료지만 화질이 낮음-->
+        <source src="images/gate.webm"><!--크롬--><!--무료 화질이 뛰어남 MS에서 반대해서 통합이 안되고 영상 올리려면 다 써야함--><!--카카오 인코더(아니더라도 인코딩 프로그램)로 변환시켜줘야함-->
+    </video>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--익스플로러를 엣지로 해석해라 익스플로러와 엣지는 서로 호환되는 브라우저야-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--viewport는 가로값이 디바이스값에 맞춘다. 1배로-->>
+    <!--width값이 디바이스의 width값과 같아져라 반응형 웹에선 반드시 해야함.-->
+    <title>미디어쿼리기본(순서상관없음)</title>
+    <style>
+        body{background-color:gray;}
+        #logo img{
+            width:100%;
+            margin-top:150px;
+        }/*min-width - 이상
+        미디어 스크린이 가로 600이상이고 1023이하이면 body{수행해라(배경색 초록)}
+        값이 겹치는 곳이 없어서 순서 상관없음.
+        screen 대신 all과 tv를 사용하기도 하는데 tv는 tv전용 screen은 모니터 전용이며
+        모든 기기에 적용되는 all로 하면 모든 기기에 연결되기 때문에 편리하고 좋음(주로 사용)*/
+        @media screen and (min-width:600px) and (max-width:1023px){body{background-color:green;}}
+        @media screen and (min-width:1024px){body{background-color:yellow;}}
+        @media screen and (max-width:559px){body{background-color:skyblue;}}
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <img src="/images/logo.png" alt="logo">
+    </div>
+</body>
+</html>

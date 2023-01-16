@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>미디어쿼리기본(순서주의)</title>
+    <style>
+        body{background-color:gray;}
+        #logo img{
+            width:100%;
+            margin-top:150px;
+        }/*max-width 최대 960px까지 허용한다. 높이는 잘하지 않는 편임. 
+        세로는 스와이프 하지만 디바이스 크기가 가로만 정해져있기 때문에
+        and 띄어쓰기 안하면 함수라는 뜻이어서 꼭 띄어쓰기 해야함.
+        해석하면 미디어의 스크린이 960px까지만(이하일때){중괄호를 수행한다.
+        (배경색을 초록으로)}
+        순서 매우 중요함 큰거에서 작은 순으로 떨어져야 css(계단식으로 적용)기 때문에
+        적용이 가능함*/
+        @media screen and (max-width:960px){body{background-color:green;}}
+        @media screen and (max-width:500px){body{background-color:yellow;}}
+        @media screen and (max-width:320px){body{background-color:orange;}}
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <img src="/images/logo.png" alt="logo">
+    </div>
+</body>
+</html>

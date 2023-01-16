@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>기본 form</title>
+</head>
+<body>
+    <form><!--무조건 입력하는 란에는 폼태그가 있어야함. 전송 등 다양한 것이 작동함.-->
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <ul><!--라벨은 꼬리표 비밀번호를 클릭하면 입력할 수 있도록 커서가 입력됨-->
+                <li>아이디(6자 이상)<input type="text" id="id"></li><!--input은 칸 input type=text는 그대로 나옴. input type=password는 가려짐-->
+                <li><label>비밀번호<input type="password" id="pw1"></label></li>
+                <li><label>비밀번호(확인)<input type="password" id="pw2"></label></li>
+            </ul>
+        </fieldset>
+        <fieldset><!--fieldset 은 form의 영역을 구분(네모칸으로) 그 이름은 legend로 지정-->>
+            <legend>개인 정보</legend><!--email에 @넣으라고 뜸-->
+            <ul>
+                <li><label>이름 <input type="text" id="name"></label></li>
+                <li><label>이메일 주소 <input type="email" id="email"></label></li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>

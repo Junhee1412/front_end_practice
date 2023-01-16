@@ -1,0 +1,57 @@
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">   
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <style>
+   </style>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script>
+	
+	</script>
+</head>
+<body>
+	<div class="container">
+		<table class="table table-bordered table-striped table-hover">
+			<thead>
+				<tr class="bg-primary">
+					<td>이름</td>
+					<td>이메일</td>
+					<td>전화번호</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>홍길동</td>
+					<td>hong@gmail.com</td>
+					<td>010-9999-8888</td>
+				</tr>
+				<tr>
+					<td>손흥민</td>
+					<td>sonny@hotmail.com</td>
+					<td>010-1111-1111</td>
+				</tr>
+				<tr>
+					<td>이강인</td>
+					<td>kanginlee@naver.com</td>
+					<td>010-2222-3333</td>
+				</tr>
+				<tr>
+					<td>홍길동</td>
+					<td>hong@gmail.com</td>
+					<td>010-9999-8888</td>
+				</tr>
+				<tr>
+					<td>손흥민</td>
+					<td>sonny@hotmail.com</td>
+					<td>010-1111-1111</td>
+				</tr>
+				<tr>
+					<td>이강인</td>
+					<td>kanginlee@naver.com</td>
+					<td>010-2222-3333</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

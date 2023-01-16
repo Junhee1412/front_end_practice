@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>스타벅스</title>
+  <style>
+	*{margin:0;padding:0;}
+	ul{list-style:none;}
+	a{text-decoration:none;color:black;}
+	header{width:100%;height:120px;position:fixed;top:0;
+			background-color:#f6f5ef;z-index:99999;}
+	.ct {width:1100px;margin:0 auto;border:1px solid;}
+	.logo{width:75px;height:75px;float:left;
+		background:url(images/logo.png) no-repeat center center;
+		margin:22.5px 0;display:block;}
+	.top_menu{width:850px; height:120px; float:right;border:1px solid blue;}
+	.user{width:500px;height:60px;float:right;border:1px solid red;}
+	.user li{float:left;}
+	.user li a{display:block;float:left;padding:10px;font-size:13px;color:#333;}
+	nav {width:650px;height:60px;float:right;border:1px solid green;}
+	nav ul li{float:left;}
+	nav ul li a {display:block;float:left;padding:10px;font-size:15px;color:#555;}
+
+	
+	/*pc에서 보이면 안되는 영역 */
+	#ch_menu, .mobile_menu{display:none;}
+	/* 모바일버전 */
+	
+	@media screen and (max-width:624px){
+	header{height:70px;}
+	.ct {width:100%;height:70px;margin:0 auto;}
+	#ch_menu{display:inline;}
+	.user{display:none;}
+	.logo{width:45px;height:45px;float:left;background-size:100%;}
+	.top_menu{position:fixed;top:0;left:100%;z-index:9999;width:100%;height:100%;background:black;}
+	.mobile_menu{display:block;width:195px;height:70px;float:right;
+				border:1px solid red;}
+	.mobile_menu li{float:left;}
+	.mobile_menu li:not(:last-child) a {display:block;padding:20px 15px;border:1px solid green;}
+	label{position:fixed;z-index:999999;background:url(./images/btn_berger_m.png) no-repeat center center;
+	width:30px; height:30px; background-size:100%;display:block;}
+	.top_menu nav {width:80%;height:100%;position:absolute;top:0;background-color:rgba(0,0,0,0.8);border:1px solid yellow;}
+	input[type="checkbox"]:checked ~ .top_menu{left:50%;}
+
+	}
+
+  </style>
+ </head>
+ <body>
+  <header>
+	<div class="ct">
+		<a class="logo" href="#"></a>
+		<input type="checkbox" id="ch_menu">
+		 <ul class="mobile_menu">
+			<li><a href="#"><img src="./images/icon_user_m.png" width="25" height="30"alt=""></a></li>
+			<li><a href="#"><img src="./images/icon_spot_m.png" width="24" height="32"alt=""></a></li>
+			<li><a href="#"><label for="ch_menu"></label></a></li>
+		 </ul>
+		<div class="top_menu">
+			<ul class="user">
+				<li><a href="#">Sign In</a></li>
+				<li><a href="#">My Starbucks</a></li>
+				<li><a href="# ">Customer Service & Ideas</a></li>
+				<li><a href="#">Find a Store</a></li>
+				<li><a href="#"><img src="./images/icon_magnifier_black.png"alt=""></a></li>
+			</ul>
+			<nav>
+				<ul>
+					<li><a href="#">COFFEE</a></li>
+					<li><a href="#">MENU</a></li>
+					<li><a href="#">STORE</a></li>
+					<li><a href="# ">RESPONSIBILITY</a></li>
+					<li><a href="#">STARBUCKS REWARDS</a></li>
+					<li><a href="#">WHAT'S NEW</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+  </header>
+ </body>
+</html>
